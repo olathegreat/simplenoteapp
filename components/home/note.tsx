@@ -1,6 +1,4 @@
 import { Ionicons } from '@expo/vector-icons';
-// import { MenuView } from '@react-native-menu/menu';
-// import {MenuView} from '@react-native-menu/menu'
 import { useActionSheet } from '@expo/react-native-action-sheet';
 import { router } from 'expo-router';
 import { Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
@@ -18,75 +16,7 @@ export interface MenuActionEvent {
   };
 }
 
-// const Note = ({ item }: NoteProps) => {
-//   const { deleteNote } = useNotesStore();
-//   const { showActionSheetWithOptions } = useActionSheet();
 
-//   const handleMenuPress = () => {
-//     showActionSheetWithOptions(
-//       {
-//         options: ['Edit', 'Delete', 'Cancel'],
-//         destructiveButtonIndex: 1,
-//         cancelButtonIndex: 2,
-//       },
-//       (selectedIndex) => {
-//         if (selectedIndex === 0) {
-//           router.push({ pathname: '/details', params: { noteId: item.id } });
-//         } else if (selectedIndex === 1) {
-//           deleteNote(item.id);
-//         }
-//       }
-//     );
-//   };
-
-//   return (
-//     <View style={styles.container}>
-//       <View className="flex w-full flex-row items-center justify-between px-10 ">
-//         <Text className="text-2xl">{item.title}</Text>
-
-//         {/* <MenuView
-//   onPressAction={({ nativeEvent }: MenuActionEvent) => {
-//     if (nativeEvent.event === 'edit') {
-//       router.push({
-//         pathname: '/details',
-//         params: { noteId: item.id },
-//       });
-//     } else if (nativeEvent.event === 'destructive') {
-//       deleteNote(item.id);
-//     }
-//   }}
-  
-//           actions={[
-//             {
-//               id: 'edit',
-//               title: 'Edit',
-//               titleColor: COLORS.primary,
-//               image: Platform.select({
-//                 ios: 'plus',
-//               }),
-//               imageColor: COLORS.primary,
-//             },
-//             {
-//               id: 'destructive',
-//               title: 'Delete',
-//               attributes: {
-//                 destructive: true,
-//               },
-//               image: Platform.select({
-//                 ios: 'trash',
-//               }),
-//             },
-//           ]}>
-//           <Ionicons name="ellipsis-vertical" size={DEFAULT_ICON_SIZE} color={'black'} />
-//         </MenuView> */}
-
-//         <TouchableOpacity onPress={handleMenuPress}>
-//           <Ionicons name="ellipsis-vertical" size={DEFAULT_ICON_SIZE} color="black" />
-//         </TouchableOpacity>
-//       </View>
-//     </View>
-//   );
-// };
 
 
 const Note = ({ item }: NoteProps) => {
